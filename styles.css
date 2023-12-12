@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: space-between;
+    border: 5px;
+    
+    
+  }
+  
+  .form-container {
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    border-radius: 5%;
+    width: 25%; /* Adjust the width as needed */
+    /* box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); */
+    background-color: white;
+  }
+  
+  .table-container {
+    margin: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5%;
+    width: 100%; /* Adjust the width as needed */
+    height: 100%;
+    background-color: white;
+    /* box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); */
+    
+  }
+  
+  /* Additional styling for better presentation */
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  .form-container form button {
+    margin-top: 10px;
+  }
+  .tablehead{
+    background-color: #A9A9A9;
+    border-radius: 5px;
+
+  }
+  
+  .modal-container{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    justify-content: center;
+    z-index: 1000;
+    
+  }
+  .update-container{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    justify-content: center;
+    z-index: 1000;
+    
+  }
