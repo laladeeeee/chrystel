@@ -42,20 +42,7 @@ const ContactTable = ({onUpdatedContact}) => {
     const storedContacts = JSON.parse(localStorage.getItem('contacts')) || [];
     setContacts(storedContacts);
   }, []);
-
-  // const handleUpdateConfirm = (updatedContact) => {
-  //   const updatedContacts = contacts.map((c) =>
-  //     c.id === selectedContact.id ? { ...c, ...updatedContact } : c
-  //   );
-  //   setContacts(updatedContacts);
-  //   saveContactsToLocalStorage(updatedContacts);
-  
-  //   setSelectedContact(null);
-  //   setUpdateDialogOpen(false);
-  
-  //   // Call the onUpdatedContact callback to update the parent component or perform additional actions
-  //   onUpdatedContact(updatedContacts);
-  // };
+ 
 
   const saveContactsToLocalStorage = (updatedContacts) => {
     localStorage.setItem('contacts', JSON.stringify(updatedContacts));
@@ -105,15 +92,6 @@ const ContactTable = ({onUpdatedContact}) => {
     setSelectedContact(null);
     setDeleteDialogOpen(false);
   };
-
-  // const handleUpdateConfirm = (updatedContact) => {
-  //   const updatedContacts = contacts.map((contacts) => 
-  //   contacts.id === selectedContact.id ? {...contacts, ...updatedContact} : contacts);
-  //   setContacts(updatedContacts);
-  //   saveContactsToLocalStorage(updatedContacts);
-  //   setSelectedContact(null);
-  //   setDeleteDialogOpen(false);
-  // }
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
